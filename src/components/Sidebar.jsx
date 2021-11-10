@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const SidebarLinks = () => {
+  const { logout } = useAuth0();
   return (
+    <>
     <ul className='mt-12'>
       <SidebarRoute to='' title='Inicio' icon='fas fa-home' />
       <SidebarRoute to='/page2' title='Pagina2' icon='fas fa-smile-wink' />
       <SidebarRoute to='/category1' title='Catego 1' icon='fab fa-amazon' />
       <SidebarRoute to='/category1/page1' title='Test' icon='fas fa-car' />
     </ul>
+     <div className=" mb-10">
+     <ul className="flex flex-col ">
+        <button className=" text-left hover:bg-gray-500 py-2 text-gray-300 pl-5" onClick={() => logout({ returnTo: window.location.origin })}  >
+        <i className="fas fa-sign-out-alt fa-lg text-gray-300 w-9 "></i>Cerrar Sesión </button>
+     </ul>
+     </div>
+     </>
   );
 };
 
