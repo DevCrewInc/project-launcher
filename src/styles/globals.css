@@ -3,9 +3,20 @@
 @tailwind utilities;
 
 .sidebar {
-  @apply w-64 bg-gray-200 shadow flex-col justify-between;
+  background-color: #252323;
+  border-radius: 19.3103px;
+  
 }
 
 .sidebar-route {
-  @apply rounded-md flex w-full justify-between cursor-pointer items-center m-3 p-3;
+  @apply  rounded-3xl flex w-full justify-between cursor-pointer items-center px-4 py-1;
+  
+}
+
+.sidebar-route-active{
+  background-color: #A5143A;
+}
+
+.sidebar-route-disable:hover{
+  background-color:#444343
 }
