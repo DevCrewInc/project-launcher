@@ -8,6 +8,7 @@ import Page2 from 'pages/Page2';
 import IndexCategory1 from 'pages/category1/Index';
 import Category1 from 'pages/category1/CategoryPage1';
 import 'styles/globals.css';
+import LoginPage from 'pages/LoginPage';
 
 // import PrivateRoute from 'components/PrivateRoute';
 
@@ -16,17 +17,21 @@ function App() {
 
   return (
     <Auth0Provider
-      domain='misiontic-concesionario.us.auth0.com'
-      clientId='WsdhjjQzDLIZEHA6ouuxXGxFONFGAQ4g'
-      redirectUri='http://ancient-temple-89158.herokuapp.com/admin'
-      audience='api-autenticacion-concesionario-mintic'
+      domain='devcrew.us.auth0.com'
+      clientId='bvnpjorcQmG5qb2or5KLfhXFMJK2ISUj'
+      redirectUri={window.location.origin}
+      cacheLocation="localstorage"
+    
+      // redirectUri='http://localhost:3000/admin'
+      // audience='api-autenticacion-concesionario-mintic'
     >
       <UserContext.Provider value={{ userData, setUserData }}>
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<PrivateLayout />}>
-              <Route path='' element={<Index />} />
-              <Route path='page2' element={<Page2 />} />
+            <Route path='/' element={<LoginPage />}/>
+            <Route path='/' element={<PrivateLayout/>}>
+              {/* <Route path='' element={<Index />} /> */}
+              <Route path='page2' element={<Page2/>}/>
               <Route path='category1' element={<IndexCategory1 />} />
               <Route path='category1/page1' element={<Category1 />} />
             </Route>
