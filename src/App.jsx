@@ -9,6 +9,7 @@ import IndexCategory1 from 'pages/category1/Index';
 import Category1 from 'pages/category1/CategoryPage1';
 import 'styles/globals.css';
 import LoginPage from 'pages/LoginPage';
+import AmpliacionProyecto from 'pages/AmpliacionProyecto';
 
 // import PrivateRoute from 'components/PrivateRoute';
 
@@ -34,6 +35,7 @@ function App() {
               <Route path='page2' element={<Page2/>}/>
               <Route path='category1' element={<IndexCategory1 />} />
               <Route path='category1/page1' element={<Category1 />} />
+              <Route path='proyecto' element={<AmpliacionProyecto/>} />
             </Route>
           </Routes>
         </BrowserRouter>
