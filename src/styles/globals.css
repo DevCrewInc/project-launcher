@@ -9,3 +9,14 @@
 .sidebar-route {
   @apply rounded-md flex w-full justify-between cursor-pointer items-center m-3 p-3;
 }
+
+
+.colors {
+  color: #28B446;
+  background-color: #C0EA7D;
+  border-radius: 8rem;
+}
+
+.colors:hover {
+  background-color: #afe05f;
+}
