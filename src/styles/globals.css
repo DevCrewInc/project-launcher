@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*{
+  font-family: 'Poppins';
+}
+
 .sidebar {
   @apply w-64 bg-gray-200 shadow flex-col justify-between;
 }
