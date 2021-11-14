@@ -9,6 +9,8 @@ import TextField from '@mui/material/TextField';
 import Avatar from '@mui/material/Avatar';
 import { deepOrange} from '@mui/material/colors';
 import { borders } from '@mui/system';
+import { TextareaAutosize } from '@material-ui/core';
+import { grey } from '@mui/material/colors';
 
 
 
@@ -16,6 +18,8 @@ import { borders } from '@mui/system';
 export default function ScrollDialog() {
   const [open, setOpen] = React.useState(false);
   const [scroll, setScroll] = React.useState('paper');
+
+  const color = grey[100];
 
   const handleClickOpen = (scrollType) => () => {
     setOpen(true);
@@ -62,28 +66,31 @@ export default function ScrollDialog() {
           
 
         </DialogTitle>
-        <DialogContent className="text-red-500 " dividers={scroll === 'paper'}>
-          <DialogContentText
-            className="py-10"
+        <DialogContent  dividers={scroll === 'paper'}>
+          <TextareaAutosize
+            aria-label="empty textarea"
+            placeholder="Empty"
+            style={{ width: 500, bgcolor: color.grey }}
+
+           
             id="scroll-dialog-description"
             ref={descriptionElementRef}
             tabIndex={-1}
           >
             {[...new Array(1)]
               .map(
-                () => `Emplear herramienta para control de versiones y compartirla con los tripulantes.
-                https://github.com/DevCrewInc/project-launcher/tree/main`,
+                () => `Emplear herramienta para control de versiones y compartirla con los tripulantes. https://github.com/DevCrewInc/project-launcher/tree/main`,
               )
               .join('\n')}
-          </DialogContentText>
+          </TextareaAutosize>
         </DialogContent>
         <div>
         <DialogContent>
           <span className="observaciones font-medium text-base text-gray-300">Observaciones</span>
           <div className="pt-2 flex justify-between space-x-4">
-            <Avatar sx={{ bgcolor: deepOrange[500] }} sx={{ width: 55, height: 55 }}>N</Avatar>
+            <Avatar sx={{ bgcolor: deepOrange[500]}} sx={{ width: 55, height: 55 }}>N</Avatar>
           
-            <TextField className="w-full" label="" sx={{ borderRadius: '50%' }} focused variant="filled" InputProps={{ disableUnderline: true }}/>
+            <TextareaAutosize className="w-full bg-gray-100" label="" sx={{ borderRadius: '50%' }} focused variant="filled" InputProps={{ disableUnderline: true }}/>
             
           </div>
         </DialogContent>
