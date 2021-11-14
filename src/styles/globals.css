@@ -9,6 +9,11 @@
   font-family: Poppins;
 }
 
+
+*{
+  font-family: 'Poppins';
+}
+
 .sidebar {
   background-color: #252323;
   border-radius: 19.3103px;
@@ -42,4 +47,26 @@
   height: 55px;
   position: relative;
   overflow: hidden;
+}
+
+.colors {
+  color: #28B446;
+  background-color: #C0EA7D;
+  border-radius: 8rem;
+}
+
+.colors:hover {
+  background-color: #afe05f;
+}
+
+.input-tablas {
+  text-align: center;
+  width: 100%;
+  color: #636363;
+  padding-left: 10px;
+
+}
+
+.input-tablas:focus {
+  outline: none;
 }

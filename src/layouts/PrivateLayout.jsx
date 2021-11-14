@@ -13,7 +13,7 @@ const PrivateLayout = () => {
       <Sidebar />
       <PrivateRoute>
       <div className='flex w-full h-full'>
-        <div className='w-full h-full  overflow-y-scroll'>
+        <div className='w-full h-full overflow-y-scroll'>
           <Outlet />
         </div>
       </div>
