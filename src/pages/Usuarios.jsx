@@ -1,5 +1,6 @@
 import React from 'react'
 import 'styles/globals.css';
+import fotoman from 'fotoman.jpeg'
 
 const Usuarios = () => {
     return (
@@ -26,16 +27,16 @@ const Usuarios = () => {
                     <th>Acción</th>
                 </tr>
             </thead> 
-            <tbody className = " text-sm text-gray-400">  
-                <tr className = "border">
+            <tbody className = " text-sm text-gray-400 ">  
+                <tr className = "border align-middle">
                     <td>
                         <input type="text" placeholder = "123" className ="input-tablas"/>
                     </td>
                     <td>
                         <input type="text" placeholder = "Juan Camilo Pérez" className ="input-tablas"/>
                     </td>
-                    <td>
-                        <input type="text" placeholder = "foto" className ="input-tablas"/>
+                    <td className="p-1 flex justify-center">
+                        <img className="rounded-full w-10" src={fotoman}/>
                     </td>
                     <td>
                         <input type="text" placeholder = "10293847" className ="input-tablas"/>
@@ -46,7 +47,7 @@ const Usuarios = () => {
                     <td className="text-center">
                         <button className = "status-button mx-1 my-1 px-2">Activo</button>
                     </td>
-                    <td className = "flex justify-center space-x-2">
+                    <td className = "space-x-2 text-center">
                         <i className = "fas fa-eye m-1 p-1 text-gray-400 hover:text-blue-600 cursor-pointer"/>
                         <i className = "fas fa-pen my-1 p-1 text-gray-400 hover:text-yellow-400 cursor-pointer"/>
                         <i className = "fas fa-trash my-1 p-1 text-gray-400 hover:text-red-400 cursor-pointer"/>
