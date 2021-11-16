@@ -9,20 +9,20 @@ const Tablas2 = () => {
                 <span className = "font-bold text-2xl">Proyectos</span>
             </div>
 
-            <div className="my-4 space-x-4 mt-8 cursor-pointer">
+            <div className="my-4 space-x-2 mt-8 cursor-pointer">
                 <a className="tabs">Todos</a>
                 <a className="tabs">Mis proyectos</a>
             </div>
             <div>
             <table className = "w-full table-fixed mt-4 ">
-                <thead className = "truncate text-wrap py-2 bg-gray-200 text-sm text-gray-700 border-2">
+                <thead className = " p-4 bg-gray-200 text-sm text-gray-700 border-2">
                     <tr>
                         <th>Id</th>
                         <th className="w-52">Nombre</th>
                         <th>Inicio</th>
                         <th>Final</th>
                         <th>Id líder</th>
-                        <th>Líder</th>
+                        <th className="w-40">Líder</th>
                         <th>Fase</th>
                         <th>Estado</th>
                         <th>Acción</th>

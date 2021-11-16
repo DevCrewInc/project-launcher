@@ -51,8 +51,8 @@
 
 .tabs{
   font-size: 18px;
-  color: #BABABA;
-  font-weight: 300;
+  color: #d0d0d0;
+  font-weight: 400;
   padding: 6px;
 }
 
@@ -87,7 +87,7 @@
   text-align: center;
   width: 100%;
   color: #636363;
-  padding-left: 10px;
+  padding-left: 5px;
 
 }
 
