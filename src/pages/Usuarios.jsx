@@ -15,8 +15,8 @@ const Usuarios = () => {
             <a className="tabs">Mis proyectos</a>
         </div>
         <div>
-        <table className = "w-full table-fixed mt-4 border-2">
-            <thead className = "leading-8 bg-gray-200 text-sm text-gray-700 border-1 text-center ">
+        <table className = "w-full table-fixed mt-4">
+            <thead className = "thead-color leading-10 text-sm text-gray-700 border-1 text-center">
                 <tr>
                     <th>Id</th>
                     <th>Nombre Usuario</th>
@@ -27,16 +27,16 @@ const Usuarios = () => {
                     <th>Acción</th>
                 </tr>
             </thead> 
-            <tbody className = "text-sm text-gray-400 ">  
-                <tr className = "border align-middle">
+            <tbody className = "tbody-border text-sm text-gray-400">  
+                <tr className = "align-middle">
                     <td>
                         <input type="text" placeholder = "123" className ="input-tablas"/>
                     </td>
                     <td>
                         <input type="text" placeholder = "Juan Camilo Pérez" className ="input-tablas"/>
                     </td>
-                    <td className="p-1 flex justify-center">
-                        <img className="rounded-full w-10" src={fotoman}/>
+                    <td className="p-2 flex justify-center">
+                        <img className="rounded-full w-9" src={fotoman}/>
                     </td>
                     <td>
                         <input type="text" placeholder = "10293847" className ="input-tablas"/>

@@ -89,13 +89,18 @@
   background-color: #c5ebff;
 }
 
+.thead-color{
+  background-color: #F4F4F4;
+}
+
+.tbody-border{
+  border-bottom: 1px solid;
+  border-color: #ebebeb;
+}
+
 .input-tablas {
   text-align: center;
   width: 100%;
   color: #636363;
-
 }
 
-.input-tablas:focus {
-  outline: none;
-}
