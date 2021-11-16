@@ -5,21 +5,26 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import TextField from '@mui/material/TextField';
 import Avatar from '@mui/material/Avatar';
-import { deepOrange} from '@mui/material/colors';
-import { borders } from '@mui/system';
 import { TextareaAutosize } from '@material-ui/core';
-import { grey } from '@mui/material/colors';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Box} from '@mui/system';
+import { Typography } from '@mui/material';
 
 
-
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#C71745',
+      dark: '#A5143A'
+    }
+  },
+});
 
 export default function ScrollDialog() {
   const [open, setOpen] = React.useState(false);
   const [scroll, setScroll] = React.useState('paper');
 
-  const color = grey[100];
 
   const handleClickOpen = (scrollType) => () => {
     setOpen(true);
@@ -40,9 +45,12 @@ export default function ScrollDialog() {
     }
   }, [open]);
 
+  
+
   return (
     <div>
-      <Button onClick={handleClickOpen('paper')}>scroll=paper</Button>
+      <Button onClick={handleClickOpen('paper')}>Abrir Modal</Button>
+      
       <Dialog
         className= "bg-black bg-opacity-50"
         open={open}
@@ -52,27 +60,27 @@ export default function ScrollDialog() {
         aria-describedby="scroll-dialog-description"
       > 
         <DialogTitle id="scroll-dialog-title">
-          <h1 className="text-base text-gray-300">Id Avance</h1>
-          <h2>Creación del repositorio <i class="far fa-check-circle"></i></h2> 
-          {/* <div sx={{ display: 'inline-flex', justifyContent: 'space-between'}}> */}
-          <div className="flex justify-between">
-            <h3 className="text-sm font-normal">por Juan Camilo Pérez</h3>
-            <div className="flex space-x-4">
-              <h3 className="avance_Date text-sm font-normal">Octubre 27</h3>
-              <h3 className="avance_Date text-sm font-normal">8:00 a.m.</h3>
+          <Box>
+            <h1 className="text-sm text-gray-300 font-normal">Id Avance</h1>
+            <h2>Creación del repositorio <i class="far fa-check-circle text-gray-400 pl-3"></i></h2> 
+            {/* <div sx={{ display: 'inline-flex', justifyContent: 'space-between'}}> */}
+            <div className="flex justify-between">
+              <h3 className="text-sm font-normal">por Juan Camilo Pérez</h3>
+              <div className="flex space-x-4">
+                <h3 className="avance_Date text-sm font-normal">Octubre 27</h3>
+                <h3 className="avance_Date text-sm font-normal">8:00 a.m.</h3>
+              </div>
             </div>
-            
-          </div>
-          
-
+          </Box>
+    
         </DialogTitle>
-        <DialogContent  dividers={scroll === 'paper'}>
+        <DialogContent dividers={scroll === 'paper'}>
           <TextareaAutosize
             aria-label="empty textarea"
-            placeholder="Empty"
-            style={{ width: 500, bgcolor: color.grey }}
-
-           
+            placeholder="Escribe aquí tu avance"
+            pl={10}
+            minRows={2}
+            style={{ width: 550, backgroundColor: '#F3F4F6', borderRadius:5 }}
             id="scroll-dialog-description"
             ref={descriptionElementRef}
             tabIndex={-1}
@@ -83,14 +91,22 @@ export default function ScrollDialog() {
               )
               .join('\n')}
           </TextareaAutosize>
+          <ThemeProvider theme={theme}>
+            <Box sx={{display:'flex' , justifyContent: 'end'}}>
+              <Button 
+              variant="contained" 
+              bgcolor='primary'
+              >Guardar</Button>
+            </Box>  
+          </ThemeProvider>
+          
         </DialogContent>
         <div>
         <DialogContent>
           <span className="observaciones font-medium text-base text-gray-300">Observaciones</span>
           <div className="pt-2 flex justify-between space-x-4">
-            <Avatar sx={{ bgcolor: deepOrange[500]}} sx={{ width: 55, height: 55 }}>N</Avatar>
-          
-            <TextareaAutosize className="w-full bg-gray-100" label="" sx={{ borderRadius: '50%' }} focused variant="filled" InputProps={{ disableUnderline: true }}/>
+            <Avatar src=""></Avatar>
+            <TextareaAutosize minRows={2} style={{ width: 550, backgroundColor: '#F3F4F6', borderRadius:5, pl:8}} label="" focused variant="filled" InputProps={{ disableUnderline: true }}/>
             
           </div>
         </DialogContent>

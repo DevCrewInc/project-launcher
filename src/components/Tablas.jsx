@@ -18,7 +18,7 @@ const Tablas = () => {
                 <thead className = "truncate text-wrap py-2 bg-gray-200 text-sm text-gray-700 border-2">
                     <tr>
                         <th>Id</th>
-                        <th>Nombre</th>
+                        <th className="w-52">Nombre</th>
                         <th>Inicio</th>
                         <th>Final</th>
                         <th>Id líder</th>

@@ -45,9 +45,9 @@
     ]
   },
   "devDependencies": {
+    "@material-ui/core": "4.12.3",
     "autoprefixer": "^9",
     "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "@material-ui/core":"4.12.3"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

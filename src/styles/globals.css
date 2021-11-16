@@ -21,7 +21,7 @@
 }
 
 .sidebar-route {
-  @apply  rounded-3xl flex w-full justify-between cursor-pointer items-center px-4 py-1;
+  @apply rounded-3xl flex w-full justify-between cursor-pointer items-center px-4 py-1;
   
 }
 
