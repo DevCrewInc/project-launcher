@@ -75,6 +75,12 @@
   border-radius: 8rem;
 }
 
+.colors {
+  color: #28B446;
+  background-color: #C0EA7D;
+  border-radius: 8rem;
+}
+
 .status-button:hover {
   background-color: #afe05f;
 }
