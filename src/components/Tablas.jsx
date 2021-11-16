@@ -9,9 +9,9 @@ const Tablas = () => {
                 <span className = "font-bold text-2xl">Proyectos</span>
             </div>
 
-            <div className="my-4 space-x-14 mt-6">
-                <button className=" text-gray-400 text-lg">Todos</button>
-                <button className=" text-gray-400 text-lg">Mis proyectos</button>
+            <div className="my-4 space-x-14 mt-6 cursor-pointer">
+                <a className="tabs">Todos</a>
+                <a className="tabs">Mis proyectos</a>
             </div>
             <div>
             <table className = "w-full table-fixed mt-2 ">
@@ -28,7 +28,7 @@ const Tablas = () => {
                         <th>Acción</th>
                     </tr>
                 </thead> 
-                <tbody className = " text-sm text-gray-600 ">  
+                <tbody className = " text-sm text-gray-400 ">  
                     <tr className = "border">
                         <td>
                             <input type="text" placeholder = "123" className ="input-tablas"/>
@@ -61,7 +61,7 @@ const Tablas = () => {
                         <td className = "px-3">Anna</td>
                         <td className = "px-3">En desarrollo</td> */}
                         <td className="text-center">
-                            <button className = "colors mx-1 my-1 px-2">Activo</button>
+                            <button className = "status-button mx-1 my-1 px-2">Activo</button>
                         </td>
                         <td className = "flex justify-center space-x-2">
                             <i className = "fas fa-eye m-1 p-1 text-gray-400 hover:text-blue-600 cursor-pointer"/>

@@ -49,14 +49,38 @@
   overflow: hidden;
 }
 
-.colors {
+.tabs{
+  font-size: 18px;
+  color: #BABABA;
+  font-weight: 500;
+  padding: 6px;
+}
+
+.tabs:hover{
+  color: #A5143A;
+  font-weight: 500;
+  border-bottom: 2px solid;
+  padding: 6px;
+}
+
+.tabs:active{
+  color: #A5143A;
+  font-weight: 500;
+  padding: 6px;
+}
+
+.status-button {
   color: #28B446;
   background-color: #C0EA7D;
   border-radius: 8rem;
 }
 
-.colors:hover {
+.status-button:hover {
   background-color: #afe05f;
+}
+
+.sidebar-li:active{
+  background-color: #c5ebff;
 }
 
 .input-tablas {
