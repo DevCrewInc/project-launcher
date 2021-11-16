@@ -16,7 +16,7 @@ const Usuarios = () => {
         </div>
         <div>
         <table className = "w-full table-fixed mt-4 border-2">
-            <thead className = "bg-gray-200 text-sm text-gray-700 border-1 text-center">
+            <thead className = "leading-8 bg-gray-200 text-sm text-gray-700 border-1 text-center ">
                 <tr>
                     <th>Id</th>
                     <th>Nombre Usuario</th>
@@ -27,7 +27,7 @@ const Usuarios = () => {
                     <th>Acción</th>
                 </tr>
             </thead> 
-            <tbody className = " text-sm text-gray-400 ">  
+            <tbody className = "text-sm text-gray-400 ">  
                 <tr className = "border align-middle">
                     <td>
                         <input type="text" placeholder = "123" className ="input-tablas"/>
