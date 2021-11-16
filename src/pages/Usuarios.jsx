@@ -14,7 +14,7 @@ const Usuarios = () => {
             <a className="tabs">Mis proyectos</a>
         </div>
         <div>
-        <table className = "w-full table-fixed mt-4 text-center">
+        <table className = "w-full table-fixed mt-4 ">
             <thead className = "bg-gray-200 text-sm text-gray-700 border-1 text-center">
                 <tr>
                     <th>Id</th>
