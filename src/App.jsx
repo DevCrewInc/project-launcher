@@ -33,7 +33,6 @@ function App() {
             <Route path='/' element={<LoginPage />}/>
             <Route path='/' element={<PrivateLayout/>}>
               {/* <Route path='' element={<Index />} /> */}
-              <Route path='page2' element={<Page2/>}/>
               <Route path='category1' element={<IndexCategory1 />} />
               <Route path='usuarios' element={<Usuarios />} />
               <Route path='proyecto' element={<AmpliacionProyecto/>} />
