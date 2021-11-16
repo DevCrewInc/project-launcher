@@ -7,7 +7,8 @@ const SidebarLinks = () => {
   return (
     <ul className=''>
       <SidebarRoute to='' title='Inicio' icon='fas fa-rocket' />
-      <SidebarRoute to='/usuarios' title='Usuarios' icon='fab fa-amazon' />
+      <SidebarRoute to='/page2' title='Pagina2' icon='fas fa-user-astronaut' />
+      <SidebarRoute to='/usuarios' title='Usuarios' icon='fas fa-user-astronaut' />
       <SidebarRoute to='/category1/page1' title='Test' icon='fas fa-car' />
       <div className=" mb-10">
      <ul className="flex flex-col ">

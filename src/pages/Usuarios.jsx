@@ -1,10 +1,10 @@
 import React from 'react'
-import Tablas from 'components/Tablas';
+import Tablas2 from 'components/Tablas2';
 
 const Usuarios = () => {
     return (
         <>
-            <Tablas/>
+            <Tablas2/>
         </>
     )
 }
