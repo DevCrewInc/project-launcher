@@ -15,14 +15,33 @@
   @apply rounded-md flex w-full justify-between cursor-pointer items-center m-3 p-3;
 }
 
+.tabs{
+  font-size: 18px;
+  color: #d0d0d0;
+  font-weight: 400;
+  padding: 6px;
+}
 
-.colors {
+.tabs:hover{
+  color: #A5143A;
+  font-weight: 500;
+  border-bottom: 2px solid;
+  padding: 6px;
+}
+
+.tabs:active{
+  color: #A5143A;
+  font-weight: 500;
+  padding: 6px;
+}
+
+.status-button {
   color: #28B446;
   background-color: #C0EA7D;
   border-radius: 8rem;
 }
 
-.colors:hover {
+.status-button:hover {
   background-color: #afe05f;
 }
 
