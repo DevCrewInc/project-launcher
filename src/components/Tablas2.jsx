@@ -9,12 +9,12 @@ const Tablas2 = () => {
                 <span className = "font-bold text-2xl">Proyectos</span>
             </div>
 
-            <div className="my-4 space-x-14 mt-6 cursor-pointer">
+            <div className="my-4 space-x-4 mt-8 cursor-pointer">
                 <a className="tabs">Todos</a>
                 <a className="tabs">Mis proyectos</a>
             </div>
             <div>
-            <table className = "w-full table-fixed mt-2 ">
+            <table className = "w-full table-fixed mt-4 ">
                 <thead className = "truncate text-wrap py-2 bg-gray-200 text-sm text-gray-700 border-2">
                     <tr>
                         <th>Id</th>
