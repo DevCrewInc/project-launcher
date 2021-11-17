@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Proyecto = () => {
+const Proyectos = () => {
     return (
 
         <div className = "flex flex-col p-10">
@@ -18,7 +18,7 @@ const Proyecto = () => {
                     <thead className = "thead-color leading-10 text-sm text-gray-700 border-1 text-center">
                         <tr>
                             <th>Id</th>
-                            <th className="w-32">Nombre Usuario</th>
+                            <th className="w-32">Nombre</th>
                             <th>Inicia</th>
                             <th>Finaliza</th>
                             <th>Id Líder</th>
@@ -67,4 +67,4 @@ const Proyecto = () => {
     )
 }
 
-export default Proyecto;
+export default Proyectos;
