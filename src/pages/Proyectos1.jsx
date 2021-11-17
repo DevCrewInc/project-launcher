@@ -10,8 +10,8 @@ const Proyectos1 = () => {
                             <span className = "text-gray-300 text-lg leading-5">12345</span>
                     </div>
                     <div className = "ml-52 space-x-10">
-                            <button className = "status-button my-1 px-4">Activo</button>
-                            <button className = "btn px-4 ">En desarrollo</button>
+                            <button className = "status-button my-1 px-4 space-x-10">Activo</button>
+                            <button className = "btn px-4 space-x-10">En desarrollo</button>
                     </div>
                 </div>
                 <div className = "grid grid-cols-3 gap-20 mt-6">
@@ -60,7 +60,7 @@ const Proyectos1 = () => {
                         </div>
                         <div className = "border-tripulantes flex items-center py-4">
                             <img src={fotoman} className = "rounded-full w-12 mr-4"/>
-                            <div className = "flex flex-col ">
+                            <div className = "flex flex-col">
                                 <span className = "font-semibold text-sm">Juan Camilo Pérez</span>
                                 <span className = "font-light text-sm">2345</span>
                             </div>

@@ -62,7 +62,7 @@ export default function ScrollDialog() {
         <DialogTitle id="scroll-dialog-title">
           <Box>
             <h1 className="text-sm text-gray-300 font-normal">Id Avance</h1>
-            <h2>Creación del repositorio <i class="far fa-check-circle text-gray-400 pl-3"></i></h2> 
+            <input className="w-64 rounded-sm" placeholder="Titulo de tu avance" type="text" id="fname" name=""></input><i class="far fa-check-circle text-gray-400 pl-3"></i> 
             {/* <div sx={{ display: 'inline-flex', justifyContent: 'space-between'}}> */}
             <div className="flex justify-between">
               <h3 className="text-sm font-normal">por Juan Camilo Pérez</h3>
@@ -75,7 +75,8 @@ export default function ScrollDialog() {
     
         </DialogTitle>
         <DialogContent dividers={scroll === 'paper'}>
-          <TextareaAutosize
+          <textarea className="pl-2 pt-2 text-sm bg-gray-100 rounded-md" placeholder="Descripción de tu avance" id="w3review" name="w3review" rows="3" cols="75"></textarea>
+          {/* <TextareaAutosize
             aria-label="empty textarea"
             placeholder="Escribe aquí tu avance"
             pl={10}
@@ -90,7 +91,7 @@ export default function ScrollDialog() {
                 () => `Emplear herramienta para control de versiones y compartirla con los tripulantes. https://github.com/DevCrewInc/project-launcher/tree/main`,
               )
               .join('\n')}
-          </TextareaAutosize>
+          </TextareaAutosize> */}
           <ThemeProvider theme={theme}>
             <Box sx={{display:'flex' , justifyContent: 'end'}}>
               <Button 
@@ -106,7 +107,8 @@ export default function ScrollDialog() {
           <span className="observaciones font-medium text-base text-gray-300">Observaciones</span>
           <div className="pt-2 flex justify-between space-x-4">
             <Avatar src=""></Avatar>
-            <TextareaAutosize minRows={2} style={{ width: 550, backgroundColor: '#F3F4F6', borderRadius:5, pl:8}} label="" focused variant="filled" InputProps={{ disableUnderline: true }}/>
+            <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="3" cols="67"></textarea>
+            {/* <TextareaAutosize minRows={2} style={{ width: 550, backgroundColor: '#F3F4F6', borderRadius:5, pl:8}} label="" focused variant="filled" InputProps={{ disableUnderline: true }}/> */}
             
           </div>
         </DialogContent>

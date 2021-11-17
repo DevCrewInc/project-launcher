@@ -1,9 +1,9 @@
-import ScrollDialog from 'components/ScrollDialog';
+import Dialogo_avances from 'components/Dialogo_avances';
 import React from 'react';
 
 const AmpliacionProyecto = () => {
     return <div>
-        <ScrollDialog/>
+        <Dialogo_avances/>
     </div>;
 };
 
