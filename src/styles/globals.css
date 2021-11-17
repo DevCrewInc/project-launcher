@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/*LAYAOUT*/
 *{
   margin: 0;
   padding: 0;
@@ -28,6 +28,7 @@
   background-color:#444343
 }
 
+/*MODAL AVANCE*/
 .avance_Date{
   color:#A5143A;
 }
@@ -44,6 +45,7 @@
   overflow: hidden;
 }
 
+/*TABLAS PROYECTOS Y USUARIOS*/
 .tabs{
   font-size: 18px;
   color: #d0d0d0;
@@ -80,6 +82,12 @@
   background-color: #afe05f;
 }
 
+.btn {
+  color: #343434;
+  background-color: #DBDBDB;
+  border-radius: 8rem;
+}
+
 .sidebar-li:active{
   background-color: #c5ebff;
 }
@@ -98,4 +106,16 @@
   width: 100%;
   color: #636363;
 }
+
+/*PROYECTO*/
+.date-icon{
+  color: #A5143A;
+}
+
+.border-tripulantes{
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.14);
+}
+
+
+
 
