@@ -129,7 +129,7 @@ export default function ScrollDialog() {
               <button className="add-button bg-green self-center w-6 h-6 rounded-full text-center"><i class="fas fa-plus fa-xs text-center"></i></button> 
             </div>
             <div className="text-center">
-              <button className="w-1/3 h-7 filled-button mt-8">GUARDAR</button>
+              <button className="w-1/3 h-7 filled-button mt-8">CREAR PROYECTO</button>
             </div>
           </DialogContent>
         </div>
