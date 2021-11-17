@@ -41,6 +41,7 @@ export default function ScrollDialog() {
   
 
   return (
+    <>
       <div>
         <Button onClick={handleClickOpen('paper')}>Diálogo detalle proyecto</Button>
         
@@ -105,13 +106,17 @@ export default function ScrollDialog() {
               
                 
               </DialogContent>
-              <div className="text-center space-x-4 mt-5">
-                <button className="w-1/5 h-7 filled-button  mb-8 ">ACEPTAR</button>
+              <div className="text-center space-x-4 mt-7">
+                <button className="w-1/5 h-7 filled-button mb-8 ">ACEPTAR</button>
                 <button className="w-1/5 h-7 outlined-button mb-8 ">RECHAZAR</button>
               </div>
             
           </div>
         </Dialog>
       </div>
+    </>
+    
+
   )
-  }
+  
+}
