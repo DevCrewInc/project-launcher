@@ -49,7 +49,7 @@ export default function ScrollDialog() {
 
   return (
     <div>
-      <Button onClick={handleClickOpen('paper')}>Abrir Modal</Button>
+      <Button onClick={handleClickOpen('paper')}>Dialogo avances</Button>
       
       <Dialog
         className= "bg-black bg-opacity-50"
@@ -66,7 +66,7 @@ export default function ScrollDialog() {
             <input className="w-full rounded-sm" placeholder="Titulo de tu avance" type="text" id="fname" name=""></input>
               <i class="far fa-check-circle self-center text-gray-400 pl-3"></i>
             </div>
-            {/* <div sx={{ display: 'inline-flex', justifyContent: 'space-between'}}> */}
+            
             <div className="flex justify-between">
                 <h3 className="text-sm font-normal">por Juan Camilo Pérez</h3>
               <div className="flex space-x-4">
@@ -79,30 +79,9 @@ export default function ScrollDialog() {
 
         <DialogContent dividers={scroll === 'paper'}>
           <textarea className="pl-2 pt-2 text-sm bg-gray-100 rounded-md" placeholder="Descripción de tu avance" id="w3review" name="w3review" rows="4" cols="75"></textarea>
-          {/* <TextareaAutosize
-            aria-label="empty textarea"
-            placeholder="Escribe aquí tu avance"
-            pl={10}
-            minRows={2}
-            style={{ width: 550, backgroundColor: '#F3F4F6', borderRadius:5 }}
-            id="scroll-dialog-description"
-            ref={descriptionElementRef}
-            tabIndex={-1}
-          >
-            {[...new Array(1)]
-              .map(
-                () => `Emplear herramienta para control de versiones y compartirla con los tripulantes. https://github.com/DevCrewInc/project-launcher/tree/main`,
-              )
-              .join('\n')}
-          </TextareaAutosize> */}
-          <ThemeProvider theme={theme}>
-            <Box sx={{display:'flex' , justifyContent: 'end'}}>
-              <Button 
-              variant="contained" 
-              bgcolor='primary'
-              >Guardar</Button>
-            </Box>  
-          </ThemeProvider>
+          <div className="text-right">
+            <button className="w-1/6 h-7 filled-button mt-2">GUARDAR</button>
+          </div>
         </DialogContent>
 
         <div>
@@ -110,14 +89,9 @@ export default function ScrollDialog() {
             <span className="observaciones font-medium text-base text-gray-300">Observaciones</span>
             <div className="pt-2 flex justify-between space-x-4">
               <Avatar src=""></Avatar>
-              <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="2" cols="67"></textarea>
-              {/* <TextareaAutosize minRows={2} style={{ width: 550, backgroundColor: '#F3F4F6', borderRadius:5, pl:8}} label="" focused variant="filled" InputProps={{ disableUnderline: true }}/> */}
-              
+              <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="2" cols="67"></textarea>    
             </div>
           </DialogContent>
-            
-            {/* <Button onClick={handleClose}>Cancel</Button>
-            <Button onClick={handleClose}>Subscribe</Button> */} 
         </div>
       </Dialog>
     </div>

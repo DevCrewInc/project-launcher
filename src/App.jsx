@@ -10,9 +10,9 @@ import IndexCategory1 from 'pages/category1/Index';
 import Category1 from 'pages/category1/CategoryPage1';
 import 'styles/globals.css';
 import LoginPage from 'pages/LoginPage';
-import AmpliacionProyecto from 'pages/AmpliacionProyecto';
-import Proyectos from 'pages/Proyectos';
+import Dialogos from 'pages/Dialogos'
 import Proyectos1 from 'pages/Proyectos1';
+import Proyectos from 'pages/Proyectos'
 
 // import PrivateRoute from 'components/PrivateRoute';
 
@@ -37,7 +37,7 @@ function App() {
               <Route path='proyectos' element={<Proyectos/>}/>
               <Route path='category1' element={<IndexCategory1 />} />
               <Route path='usuarios' element={<Usuarios />} />
-              <Route path='ampliacionproyecto' element={<AmpliacionProyecto/>} />
+              <Route path='dialogos' element={<Dialogos/>}/>
               <Route path='proyectos1' element={<Proyectos1/>} />
 
 
