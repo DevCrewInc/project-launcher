@@ -62,18 +62,21 @@ export default function ScrollDialog() {
         <DialogTitle id="scroll-dialog-title">
           <Box>
             <h1 className="text-sm text-gray-300 font-normal">Id Avance</h1>
-            <input className="w-64 rounded-sm" placeholder="Titulo de tu avance" type="text" id="fname" name=""></input><i class="far fa-check-circle text-gray-400 pl-3"></i> 
+            <div className="flex justify-between">
+            <input className="w-full rounded-sm" placeholder="Titulo de tu avance" type="text" id="fname" name=""></input>
+              <i class="far fa-check-circle self-center text-gray-400 pl-3"></i>
+            </div>
             {/* <div sx={{ display: 'inline-flex', justifyContent: 'space-between'}}> */}
             <div className="flex justify-between">
-              <h3 className="text-sm font-normal">por Juan Camilo Pérez</h3>
+                <h3 className="text-sm font-normal">por Juan Camilo Pérez</h3>
               <div className="flex space-x-4">
                 <h3 className="avance_Date text-sm font-normal">Octubre 27</h3>
                 <h3 className="avance_Date text-sm font-normal">8:00 a.m.</h3>
               </div>
             </div>
           </Box>
-    
         </DialogTitle>
+
         <DialogContent dividers={scroll === 'paper'}>
           <textarea className="pl-2 pt-2 text-sm bg-gray-100 rounded-md" placeholder="Descripción de tu avance" id="w3review" name="w3review" rows="4" cols="75"></textarea>
           {/* <TextareaAutosize
@@ -100,22 +103,21 @@ export default function ScrollDialog() {
               >Guardar</Button>
             </Box>  
           </ThemeProvider>
-          
         </DialogContent>
+
         <div>
-        <DialogContent>
-          <span className="observaciones font-medium text-base text-gray-300">Observaciones</span>
-          <div className="pt-2 flex justify-between space-x-4">
-            <Avatar src=""></Avatar>
-            <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="2" cols="67"></textarea>
-            {/* <TextareaAutosize minRows={2} style={{ width: 550, backgroundColor: '#F3F4F6', borderRadius:5, pl:8}} label="" focused variant="filled" InputProps={{ disableUnderline: true }}/> */}
-            
-          </div>
-        </DialogContent>
+          <DialogContent>
+            <span className="observaciones font-medium text-base text-gray-300">Observaciones</span>
+            <div className="pt-2 flex justify-between space-x-4">
+              <Avatar src=""></Avatar>
+              <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="2" cols="67"></textarea>
+              {/* <TextareaAutosize minRows={2} style={{ width: 550, backgroundColor: '#F3F4F6', borderRadius:5, pl:8}} label="" focused variant="filled" InputProps={{ disableUnderline: true }}/> */}
+              
+            </div>
+          </DialogContent>
             
             {/* <Button onClick={handleClose}>Cancel</Button>
-            <Button onClick={handleClose}>Subscribe</Button> */}
-          
+            <Button onClick={handleClose}>Subscribe</Button> */} 
         </div>
       </Dialog>
     </div>
