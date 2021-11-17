@@ -66,6 +66,5 @@ const Proyectos = () => {
         </div>
     )
 }
-        
-     
+
 export default Proyectos;
