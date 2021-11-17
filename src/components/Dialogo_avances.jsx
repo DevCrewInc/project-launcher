@@ -75,7 +75,7 @@ export default function ScrollDialog() {
     
         </DialogTitle>
         <DialogContent dividers={scroll === 'paper'}>
-          <textarea className="pl-2 pt-2 text-sm bg-gray-100 rounded-md" placeholder="Descripción de tu avance" id="w3review" name="w3review" rows="3" cols="75"></textarea>
+          <textarea className="pl-2 pt-2 text-sm bg-gray-100 rounded-md" placeholder="Descripción de tu avance" id="w3review" name="w3review" rows="4" cols="75"></textarea>
           {/* <TextareaAutosize
             aria-label="empty textarea"
             placeholder="Escribe aquí tu avance"
@@ -107,7 +107,7 @@ export default function ScrollDialog() {
           <span className="observaciones font-medium text-base text-gray-300">Observaciones</span>
           <div className="pt-2 flex justify-between space-x-4">
             <Avatar src=""></Avatar>
-            <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="3" cols="67"></textarea>
+            <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="2" cols="67"></textarea>
             {/* <TextareaAutosize minRows={2} style={{ width: 550, backgroundColor: '#F3F4F6', borderRadius:5, pl:8}} label="" focused variant="filled" InputProps={{ disableUnderline: true }}/> */}
             
           </div>
