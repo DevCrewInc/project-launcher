@@ -67,7 +67,7 @@ export default function ScrollDialog() {
                   <img className="rounded-full w-9 h-9" src={fotoman}/>
                       <div className = "flex flex-col ">
                         <span className = "font-semibold text-sm">Juan Camilo Pérez</span>
-                        <span className = "font-light text-xs">2345</span>
+                        <span className = "text-xs font-medium text-blue-500">2345 <i class="far fa-flag"></i></span>
                       </div>
                   </div>
                 </div>
