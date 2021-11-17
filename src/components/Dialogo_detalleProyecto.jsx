@@ -41,8 +41,6 @@ export default function ScrollDialog() {
   
 
   return (
-    <>
-    
       <div>
         <Button onClick={handleClickOpen('paper')}>Diálogo detalle proyecto</Button>
         
@@ -82,7 +80,6 @@ export default function ScrollDialog() {
                     <span className = "date-budget">Feb 01- Dic 12</span>
                 </div>
               </div>
-
             </Box>
           </DialogTitle>
 
@@ -116,6 +113,5 @@ export default function ScrollDialog() {
           </div>
         </Dialog>
       </div>
-    </>
   )
   }
