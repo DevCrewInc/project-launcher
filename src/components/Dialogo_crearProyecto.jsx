@@ -73,13 +73,11 @@ export default function ScrollDialog() {
                 <img className="rounded-full w-9 h-9" src={fotoman}/>
                     <div className = "flex flex-col ">
                         <span className = "font-semibold text-sm">Juan Camilo Pérez</span>
-                        <span className = "font-light text-xs">2345</span>
+                        <span className = "text-xs font-medium text-blue-500">2345 <i class="far fa-flag"></i></span>
                     </div>
                 </div>
               </div>
             </div>
-            
-            {/* <div sx={{ display: 'inline-flex', justifyContent: 'space-between'}}> */}
 
           </Box>
         </DialogTitle>
@@ -97,23 +95,6 @@ export default function ScrollDialog() {
           </div>
           
           <textarea className="mt-4 pl-2 pt-2 text-sm bg-gray-100 rounded-md" placeholder="Describe tu proyecto" id="w3review" name="w3review" rows="7" cols="75"></textarea>
-          
-          {/* <TextareaAutosize
-            aria-label="empty textarea"
-            placeholder="Escribe aquí tu avance"
-            pl={10}
-            minRows={2}
-            style={{ width: 550, backgroundColor: '#F3F4F6', borderRadius:5 }}
-            id="scroll-dialog-description"
-            ref={descriptionElementRef}
-            tabIndex={-1}
-          >
-            {[...new Array(1)]
-              .map(
-                () => `Emplear herramienta para control de versiones y compartirla con los tripulantes. https://github.com/DevCrewInc/project-launcher/tree/main`,
-              )
-              .join('\n')}
-          </TextareaAutosize> */}
           
         </DialogContent>
 
