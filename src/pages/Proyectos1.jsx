@@ -4,12 +4,12 @@ import fotoman from 'fotoman.jpeg'
 const Proyectos1 = () => {
     return (
         <div className = "flex flex-col m-10">
-                <div className = "grid grid-cols-1 gap-y-6 sm:grid-cols-2  mb-10 ">
+                <div className = "grid grid-cols-1 gap-y-6 sm:grid-cols-2 mb-10 ">
                     <div className="flex flex-col">
                             <span className = "font-bold text-2xl">Nombre Proyecto</span>
                             <span className = "text-gray-300 text-lg leading-5">12345</span>
                     </div>
-                    <div className = "flex items-center space-x-10">
+                    <div className = "flex items-start space-x-10">
                             <button className = "status-button my-1 px-4">Activo</button>
                             <button className = "btn px-4 my-1 sm:text-justify">En desarrollo</button>
                     </div>
