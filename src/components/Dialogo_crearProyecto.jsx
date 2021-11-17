@@ -50,7 +50,7 @@ export default function ScrollDialog() {
 
   return (
     <div>
-      <Button onClick={handleClickOpen('paper')}>Diálogo detalle proyecto</Button>
+      <Button onClick={handleClickOpen('paper')}>Diálogo crear proyecto</Button>
       
       <Dialog
         className= "bg-black bg-opacity-50"
@@ -132,24 +132,9 @@ export default function ScrollDialog() {
               <button className="w-1/3 h-7 filled-button mt-8">GUARDAR</button>
             </div>
           </DialogContent>
-            
-
-            
-            
         </div>
       </Dialog>
     </div>
   );
 }
 
-{/* <ThemeProvider theme={theme}>
-  <Box sx={{display:'flex' , justifyContent: 'end'}}>
-    <Button 
-    variant="contained" 
-    bgcolor='primary'
-    >Guardar</Button>
-  </Box>  
-</ThemeProvider> */}
-            
-{/* <Button onClick={handleClose}>Cancel</Button>
-<Button onClick={handleClose}>Subscribe</Button> */} 
