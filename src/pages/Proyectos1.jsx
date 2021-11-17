@@ -4,9 +4,6 @@ import fotoman from 'fotoman.jpeg'
 const Proyectos1 = () => {
     return (
         <div className = "flex flex-col m-10">
-            <div>
-                
-            </div>
                 <div className = "flex mb-10 ">
                     <div className="flex flex-col">
                             <span className = "font-bold text-2xl">Nombre Proyecto</span>
@@ -48,21 +45,21 @@ const Proyectos1 = () => {
                             <span>Tripulantes</span>
                         </div>
                         <div className = "border-tripulantes flex items-center mt-8 pb-4">
-                            <img src={fotoman} className = "rounded-full w-14 mr-4"/>
+                            <img src={fotoman} className = "rounded-full w-12 mr-4"/>
                             <div className = "flex flex-col ">
                                 <span className = "font-semibold text-sm">Juan Camilo Pérez</span>
                                 <span className = "font-light text-xs">2345</span>
                             </div>
                         </div>
                         <div className = "border-tripulantes flex items-center py-4">
-                            <img src={fotoman} className = "rounded-full w-14 mr-4"/>
+                            <img src={fotoman} className = "rounded-full w-12 mr-4"/>
                             <div className = "flex flex-col ">
                                 <span className = "font-semibold text-sm">Juan Camilo Pérez</span>
                                 <span className = "font-light text-xs">2345</span>
                             </div>
                         </div>
                         <div className = "border-tripulantes flex items-center py-4">
-                            <img src={fotoman} className = "rounded-full w-14 mr-4"/>
+                            <img src={fotoman} className = "rounded-full w-12 mr-4"/>
                             <div className = "flex flex-col ">
                                 <span className = "font-semibold text-sm">Juan Camilo Pérez</span>
                                 <span className = "font-light text-sm">2345</span>
