@@ -14,7 +14,7 @@ const Proyectos1 = () => {
                         <button className = "btn px-4 ">En desarrollo</button>
                 </div>
             </div>
-            <div className = "grid grid-cols-3 gap-20 mt-6">
+            <div className = "grid grid-cols-3 gap-16 mt-6">
                 <div className = "col-span-2 ">
                     <div className = "space-x-1">
                         <i className = "fas fa-calendar-alt date-icon"/>
