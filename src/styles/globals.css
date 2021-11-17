@@ -80,6 +80,12 @@
   background-color: #afe05f;
 }
 
+.btn {
+  color: #343434;
+  background-color: #DBDBDB;
+  border-radius: 8rem;
+}
+
 .sidebar-li:active{
   background-color: #c5ebff;
 }
@@ -97,5 +103,9 @@
   text-align: center;
   width: 100%;
   color: #636363;
+}
+
+.date-icon{
+  color: #A5143A;
 }
 

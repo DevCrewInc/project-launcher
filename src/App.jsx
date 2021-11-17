@@ -12,6 +12,7 @@ import 'styles/globals.css';
 import LoginPage from 'pages/LoginPage';
 import AmpliacionProyecto from 'pages/AmpliacionProyecto';
 import Proyectos from 'pages/Proyectos';
+import Proyectos1 from 'pages/Proyectos1';
 
 // import PrivateRoute from 'components/PrivateRoute';
 
@@ -37,6 +38,8 @@ function App() {
               <Route path='category1' element={<IndexCategory1 />} />
               <Route path='usuarios' element={<Usuarios />} />
               <Route path='proyecto' element={<AmpliacionProyecto/>} />
+              <Route path='proyectos1' element={<Proyectos1/>} />
+
 
 
             </Route>
