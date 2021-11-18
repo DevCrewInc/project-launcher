@@ -10,7 +10,6 @@ const Dialogos = () => {
         <Dialogo_crearProyecto/>
         <Dialogo_detalleProyecto/>
         <Dialogo_perfil/>
-
     </div>;
 };
 
