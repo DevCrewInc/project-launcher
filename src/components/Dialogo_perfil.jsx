@@ -10,16 +10,8 @@ import { TextareaAutosize } from '@material-ui/core';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Box} from '@mui/system';
 import { Typography } from '@mui/material';
+import fotoman from 'fotoman.jpeg';
 
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#C71745',
-      dark: '#A5143A'
-    }
-  },
-});
 
 export default function ScrollDialog() {
   const [open, setOpen] = React.useState(false);
@@ -49,51 +41,85 @@ export default function ScrollDialog() {
 
   return (
     <div>
+
       <Button onClick={handleClickOpen('paper')}>Dialogo perfil</Button>
-      
-      <Dialog
-        className= "bg-black bg-opacity-50"
-        open={open}
-        onClose={handleClose}
-        scroll={scroll}
-        aria-labelledby="scroll-dialog-title"
-        aria-describedby="scroll-dialog-description"
-      > 
-        <DialogTitle id="scroll-dialog-title">
-          <Box>
-            <h1 className="text-sm text-gray-300 font-normal">Id Avance</h1>
-            <div className="flex justify-between">
-            <input className="w-full rounded-sm" placeholder="Titulo de tu avance" type="text" id="fname" name=""></input>
-              <i class="far fa-check-circle self-center text-gray-400 pl-3"></i>
-            </div>
-            
-            <div className="flex justify-between">
-                <h3 className="text-sm font-normal">por Juan Camilo Pérez</h3>
-              <div className="flex space-x-4">
-                <h3 className="avance_Date text-sm font-normal">Octubre 27</h3>
-                <h3 className="avance_Date text-sm font-normal">8:00 a.m.</h3>
+
+      <form>
+        <Dialog
+          className= "bg-black bg-opacity-50"
+          open={open}
+          onClose={handleClose}
+          scroll={scroll}
+          aria-labelledby="scroll-dialog-title"
+          aria-describedby="scroll-dialog-description"
+        > 
+          <DialogTitle id="scroll-dialog-title">
+            <Box>
+              <div className="flex justify-between items-center mt-3">
+                <div className="flex items-center ">
+                  <img className="rounded-full h-20" src={fotoman}/>
+                  <div className="ml-6">
+                    <h1 className="id-perfil text-gray-300 font-normal">Id Estudiante</h1>
+                    <h1 className="nombre-perfil font-semidold"> Juan Camilo Pérez</h1>
+                    <h1 className="rol-perfil font-normal"> Estudiante</h1>
+                  </div>
+                </div>  
+                <div className="space-x-4 flex">
+                  <button className="px-4 h-7 outlined-button-perfil">RECHAZAR</button>
+                  <button className="px-4 h-7 filled-button-perfil">ACEPTAR</button>
+                </div>
               </div>
-            </div>
-          </Box>
-        </DialogTitle>
+              <div className="mt-6 space-x-8 cursor-pointer">
+                  <a className="tabs-perfil">Datos personales</a>
+                  <a className="tabs-perfil">Privacidad</a>
+              </div>
+            </Box>
+          </DialogTitle>
 
-        <DialogContent dividers={scroll === 'paper'}>
-          <textarea className="pl-2 pt-2 text-sm bg-gray-100 rounded-md" placeholder="Descripción de tu avance" id="w3review" name="w3review" rows="4" cols="75"></textarea>
-          <div className="text-right">
-            <button className="w-1/6 h-7 filled-button mt-2">GUARDAR</button>
+          <div className="m-7 mt-4 texto-perfil">
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className=" font-medium">Documento</label>
+                <input className="text-sm w-full font-light bg-gray-100 rounded-lg h-7 pl-2" placeholder="Doc identidad" />
+              </div>
+              <div>
+                <label className=" font-medium">Email</label>
+                <input className="text-sm font-light w-full bg-gray-100 rounded-lg h-7 pl-2" placeholder="ejemplo@ejemplo.com" />
+              </div>
+              <div>
+                <label className=" font-medium">Celular</label>
+                <input className=" text-sm font-light w-full bg-gray-100 rounded-lg h-7 pl-2" placeholder="Número celular" />
+              </div>
+              <div></div>
+              <div>
+                <label className=" font-medium">Facultad</label>
+                <select required className="text-sm w-full font-light bg-gray-100 rounded-lg h-7 pl-2" name="saleStatus" defaultValue="">
+                  <option disabled type="String" value="">Selecciona facultad</option>
+                  <option type="String">Artes</option>
+                  <option type="String">Ingeniería</option>
+                  <option type="String">Ciencias</option>
+                </select>
+              </div>
+              <div>
+                <label className=" font-medium">Semestre</label>
+                <select required className="text-sm w-full font-light bg-gray-100 rounded-lg h-7 pl-2" name="saleStatus" defaultValue="">
+                  <option disabled type="String" value="">Selecciona semestre</option>
+                  <option type="String">Primero</option>
+                  <option type="String">Segundo</option>
+                  <option type="String">Tercero</option>
+                </select>
+              </div>
+              
+            </div>
+          <div className="grid mt-8 mb-6">
+              <label className=" font-medium">Acerca de mi</label>
+              <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe acerca de ti" id="w3review" name="w3review" rows="4" cols="67"></textarea>
           </div>
-        </DialogContent>
-
-        <div>
-          <DialogContent>
-            <span className="observaciones font-medium text-base text-gray-300">Observaciones</span>
-            <div className="pt-2 flex justify-between space-x-4">
-              <Avatar src=""></Avatar>
-              <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="2" cols="67"></textarea>    
-            </div>
-          </DialogContent>
         </div>
-      </Dialog>
+        </Dialog>
+        
+      </form>
+      
     </div>
   );
 }

@@ -83,7 +83,7 @@ export default function ScrollDialog() {
 
           <div className="">
             <DialogContent>
-              <div className="space-x-8 cursor-pointer">
+                <div className="space-x-8 cursor-pointer">
                     <a className="tabs-modal">Objetivos generales</a>
                     <a className="tabs-modal">Objetivos específicos</a>
                 </div>

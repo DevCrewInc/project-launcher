@@ -189,3 +189,76 @@
   border-radius: 6px;
 }
 
+/* PERFIL*/
+
+.id-perfil{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.nombre-perfil{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.rol-perfil{
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.filled-button-perfil{
+  font-size: 12px;
+  background-color: #A5143A;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.filled-button-perfil:hover{
+  background-color: #c91c4a;
+  box-shadow: 0px 0px 2px rgba(33, 33, 33, 0.5)
+}
+
+.outlined-button-perfil{
+  font-size: 12px;
+  font-weight: 500;
+  border: 2px solid;
+  border-color: #A5143A;
+  color: #A5143A;
+  border-radius: 6px;
+}
+
+.outlined-button-perfil:hover{
+  font-size: 12px;
+  font-weight: 500;
+  border: 2px solid;
+  border-color: #A5143A;
+  background-color: #ae123c22;
+  color: #A5143A;
+  border-radius: 6px;
+}
+
+.tabs-perfil{
+  font-size: 15px;
+  color: #d0d0d0;
+  font-weight: 400;
+  padding: 6px;
+}
+
+.tabs-perfil:hover{
+  color: #A5143A;
+  font-weight: 500;
+  border-bottom: 2px solid;
+  padding: 6px;
+}
+
+.tabs-perfil:active{
+  color: #A5143A;
+  font-weight: 500;
+  padding: 6px;
+}
+
+.texto-perfil{
+  font-size:13px;
+  font-weight: 300;
+}
