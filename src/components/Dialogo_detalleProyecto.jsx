@@ -81,7 +81,6 @@ export default function ScrollDialog() {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           </p>
 
-
           <div className="">
             <DialogContent>
               <div className="space-x-8 cursor-pointer">
@@ -95,8 +94,7 @@ export default function ScrollDialog() {
                   <span className="w-full text-sm"> <br/>3.Objetivo general ljdlkjaldkjaklsdjsklajdklsajdklsadlksja sdkjasdjsdkjsahjkdhsa</span>
                   <span className="w-full text-sm"> <br/>4.Objetivo general ljdlkjaldkjaklsdjsklajdklsajdklsadlksja sdkjasdjsdkjsahjkdhsa</span>
                 </div>
-              
-                
+
               </DialogContent>
               <div className="text-center space-x-4 mt-8 mb-10">
                 <button className="w-1/5 h-7 filled-button ">ACEPTAR</button>

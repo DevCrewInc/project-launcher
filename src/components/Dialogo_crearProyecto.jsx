@@ -93,9 +93,7 @@ export default function ScrollDialog() {
                 <span className = "date-icon date-budget">Feb 01- Dic 12</span>
             </div>
           </div>
-          
-          <textarea className="mt-4 pl-2 pt-2 text-sm bg-gray-100 rounded-md" placeholder="Describe tu proyecto" id="w3review" name="w3review" rows="7" cols="75"></textarea>
-          
+          <textarea className="mt-4 pl-2 pt-2 text-sm bg-gray-100 rounded-md" placeholder="Describe tu proyecto" id="w3review" name="w3review" rows="7" cols="75"></textarea> 
         </DialogContent>
 
         <div>
