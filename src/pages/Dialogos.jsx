@@ -3,14 +3,23 @@ import Dialogo_crearProyecto from 'components/Dialogo_crearProyecto';
 import Dialogo_detalleProyecto from 'components/Dialogo_detalleProyecto';
 import Dialogo_perfil from 'components/Dialogo_perfil';
 import React from 'react';
+import UpperBar from 'components/UpperBar';
+
 
 const Dialogos = () => {
-    return <div>
-        <Dialogo_avances/>
-        <Dialogo_crearProyecto/>
-        <Dialogo_detalleProyecto/>
-        <Dialogo_perfil/>
-    </div>;
-};
+    return (
+
+        <div className = "flex flex-col p-10">
+               <div>
+                    <Dialogo_avances/>
+                    <Dialogo_crearProyecto/>
+                    <Dialogo_detalleProyecto/>
+                    <Dialogo_perfil/>
+                </div>
+                
+        </div>
+    )
+}
+
 
 export default Dialogos;
