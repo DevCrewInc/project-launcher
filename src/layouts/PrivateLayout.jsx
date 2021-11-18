@@ -16,7 +16,7 @@ const PrivateLayout = () => {
         <div className='w-full h-full overflow-y-scroll'>
           <Outlet />
         </div>
-      </div>
+      </div>  
       </PrivateRoute>
     </div>
   
