@@ -62,7 +62,7 @@ export default function ScrollDialog() {
       > 
         <DialogTitle id="scroll-dialog-title">
           <Box>
-            <div className="flex justify-between">
+            <div className="flex justify-between mt-3">
               <div>
                 <input className="w-full rounded-sm" placeholder="Nombre del proyecto" type="text" id="fname" name=""></input>
                 <h1 className="text-sm text-gray-300 font-normal">Id Proyecto</h1>
@@ -101,16 +101,20 @@ export default function ScrollDialog() {
         <div>
           <DialogContent>
             <span className="objetivos-dialogo">Objetivos generales y específicos</span>
-            <div className="pt-2 mt-3 flex justify-between space-x-4 text-center">
-              <input className="w-full h-8 text-sm rounded-sm pl-2 text-m bg-gray-100" placeholder="Objetivo general" type="text" id="fname" name=""></input>
-              <button className="add-button bg-green self-center w-6 h-6 rounded-full text-center"><i class="fas fa-plus fa-xs text-center"></i></button> 
+            <div className="pt-2 mt-3 flex justify-between space-x-4">
+              <input className="w-full h-8 text-sm rounded-sm pl-2 text-m bg-gray-100 " placeholder="Objetivo general" type="text" id="fname" name=""></input>
+              <div className="self-center">
+                <button className="add-button bg-green w-6 h-6 rounded-full "><i class="p-2 fas fa-plus fa-xs text-center"></i></button> 
+              </div> 
             </div>
-            <div className="pt-2 mt-2 flex justify-between space-x-4 text-center">
+            <div className="pt-2 mt-2 flex justify-between space-x-4">
               <input className="w-full h-8 text-sm rounded-sm pl-2 text-m bg-gray-100" placeholder="Objetivo específico" type="text" id="fname" name=""></input>
-              <button className="add-button bg-green self-center w-6 h-6 rounded-full text-center"><i class="fas fa-plus fa-xs text-center"></i></button> 
+              <div className="self-center">
+                <button className="add-button bg-green w-6 h-6 rounded-full"><i class="p-2 fas fa-plus fa-xs"></i></button> 
+              </div>
             </div>
             <div className="text-center">
-              <button className="w-1/3 h-7 filled-button mt-8">CREAR PROYECTO</button>
+              <button className="w-1/3 h-7 filled-button mt-8 mb-5">CREAR PROYECTO</button>
             </div>
           </DialogContent>
         </div>

@@ -49,7 +49,7 @@ export default function ScrollDialog() {
 
   return (
     <div>
-      <Button onClick={handleClickOpen('paper')}>Dialogo avances</Button>
+      <Button onClick={handleClickOpen('paper')}>Dialogo perfil</Button>
       
       <Dialog
         className= "bg-black bg-opacity-50"
@@ -89,7 +89,7 @@ export default function ScrollDialog() {
             <span className="observaciones font-medium text-base text-gray-300">Observaciones</span>
             <div className="pt-2 flex justify-between space-x-4">
               <Avatar src=""></Avatar>
-              <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="2" cols="67"></textarea>
+              <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="2" cols="67"></textarea>    
             </div>
           </DialogContent>
         </div>
