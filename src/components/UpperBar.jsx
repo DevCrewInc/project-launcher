@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UpperBar = ({icon}) => {
+const UpperBar = ({icon , title}) => {
     return (
         <>
             <div className="space-x-3 flex w-full self-center">
@@ -8,7 +8,7 @@ const UpperBar = ({icon}) => {
                     <path fill-rule="evenodd" clip-rule="evenodd" d={icon} fill="#343434"/>
                 </svg>
 
-                <span className = "font-bold text-2xl">Proyectos</span>
+                <span className = "font-bold text-2xl">{title}</span>
                 
                 <div className ="w-full flex justify-end self-center">
                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
