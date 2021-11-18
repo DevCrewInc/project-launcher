@@ -61,7 +61,7 @@ export default function ScrollDialog() {
       > 
         <DialogTitle id="scroll-dialog-title">
           <Box>
-            <h1 className="text-sm text-gray-300 font-normal">Id Avance</h1>
+            <h1 className="mt-3 text-sm text-gray-300 font-normal">Id Avance</h1>
             <div className="flex justify-between">
             <input className="w-full rounded-sm" placeholder="Titulo de tu avance" type="text" id="fname" name=""></input>
               <i class="far fa-check-circle self-center text-gray-400 pl-3"></i>
@@ -89,7 +89,7 @@ export default function ScrollDialog() {
             <span className="observaciones font-medium text-base text-gray-300">Observaciones</span>
             <div className="pt-2 flex justify-between space-x-4">
               <Avatar src=""></Avatar>
-              <textarea className="pl-2 pt-2 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="2" cols="67"></textarea>
+              <textarea className="pl-2 pt-2 mb-5 text-sm rounded-md bg-gray-100" placeholder="Escribe un comentario" id="w3review" name="w3review" rows="2" cols="67"></textarea>
             </div>
           </DialogContent>
         </div>

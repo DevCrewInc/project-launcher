@@ -98,10 +98,10 @@ export default function ScrollDialog() {
               
                 
               </DialogContent>
-              <div className="text-center space-x-4 mt-8">
-                <button className="w-1/5 h-7 filled-button mb-8 ">ACEPTAR</button>
-                <button className="w-1/5 h-7 outlined-button mb-8 ">RECHAZAR</button>
-                <button className="w-1/3 h-7 filled-button mb-8 ">UNIRME</button>
+              <div className="text-center space-x-4 mt-8 mb-10">
+                <button className="w-1/5 h-7 filled-button ">ACEPTAR</button>
+                <button className="w-1/5 h-7 outlined-button ">RECHAZAR</button>
+                <button className="w-1/3 h-7 filled-button  ">UNIRME</button>
               </div>
             
           </div>
