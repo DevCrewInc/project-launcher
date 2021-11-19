@@ -82,11 +82,6 @@
   background-color: #afe05f;
 }
 
-.btn {
-  color: #343434;
-  background-color: #DBDBDB;
-  border-radius: 8rem;
-}
 
 .sidebar-li:active{
   background-color: #c5ebff;
@@ -115,6 +110,12 @@
 
 .border-tripulantes{
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.14);
+}
+
+.btn-estado-proyecto {
+  color: #343434;
+  background-color: #DBDBDB;
+  border-radius: 8rem;
 }
 
 /*NUEVO PROYECTO*/
@@ -190,7 +191,6 @@
 }
 
 /* PERFIL*/
-
 .id-perfil{
   font-size: 12px;
   font-weight: 400;
@@ -262,3 +262,4 @@
   font-size:13px;
   font-weight: 300;
 }
+
