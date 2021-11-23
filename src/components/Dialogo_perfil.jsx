@@ -4,8 +4,6 @@ import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import { Box} from '@mui/system';
 import fotoman from 'fotoman.jpeg';
-import { Link } from 'react-router-dom';
-
 
 
 export default function ScrollDialog() {
@@ -37,9 +35,9 @@ export default function ScrollDialog() {
   return (
     
     <div>
-      <Link to="/perfil">
-        <Button onClick={handleClickOpen('paper')}>Dialogo perfil</Button>
-      </Link>
+
+      <Button onClick={handleClickOpen('paper')}>Dialogo perfil</Button>
+
       <form>
         <Dialog
           className= "bg-black bg-opacity-50"
