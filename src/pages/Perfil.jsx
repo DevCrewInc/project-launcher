@@ -7,7 +7,6 @@ import fotoman from 'fotoman.jpeg';
 import { Link } from 'react-router-dom';
 
 
-
 export default function ScrollDialog() {
   const [open, setOpen] = React.useState(false);
   const [scroll, setScroll] = React.useState('paper');
