@@ -5,6 +5,7 @@ import UpperBar from 'components/UpperBar';
 import { useQuery } from '@apollo/client';
 import {getUsuarios} from '../graphql/usuarios/queries'
 import {toast} from 'react-toastify';
+import ModalDetalleProyecto from 'components/ModalDetalleProyecto';
 
 
 
@@ -49,7 +50,7 @@ const ListaUsuarios = () => {
                         
                         }) }
                     
-                    </table>
+                </table>
             </div>
             
 
@@ -69,7 +70,7 @@ const FilasTablas = ({usuario})=>{
                             <input type="text" placeholder = {usuario.nombre} className ="input-tablas text-center"/>
                         </td>
                         <td className="text-center p-2 w-14">
-                        <img className="rounded-full w-9" src={fotoman}/>
+                        <img className="rounded-full w-" src={fotoman}/>
                         </td>
                         <td className="text-center">
                             <input className="text-gray-600 cursor-pointer bg-white text-center" type="text" value={usuario.identificacion}/>
@@ -80,8 +81,8 @@ const FilasTablas = ({usuario})=>{
                         <td className="text-center">
                             <button className = "status-button mx-1 my-1 px-2 ">{usuario.estado}</button>
                         </td>
-                        <td className = "space-x-2 text-center">
-                            <i className = "fas fa-eye m-1 p-1 text-gray-400 hover:text-blue-600 cursor-pointer"/>
+                        <td className = "flex justify-center items-center space-x-2">
+                            <ModalDetalleProyecto/>
                             <i className = "fas fa-pen my-1 p-1 text-gray-400 hover:text-yellow-400 cursor-pointer"/>
                             <i className = "fas fa-trash my-1 p-1 text-gray-400 hover:text-red-400 cursor-pointer"/>
                         </td>

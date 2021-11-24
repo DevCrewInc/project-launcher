@@ -34,8 +34,14 @@
   position: absolute;
   display: flex;
   justify-content: end;
-
 }
+
+.button-new-project-extended{
+  position: absolute;
+  background-color: #A5143A;
+  justify-content: end;
+}
+
 
 /*MODAL AVANCE*/
 .avance_Date{

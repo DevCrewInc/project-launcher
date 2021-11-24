@@ -53,6 +53,9 @@ const ButtonNewProject = () =>{
           </defs>
           </svg>
       </button>
+      <button className="button-new-project-extended rounded-full w-30 text-white">
+        Nuevo Proyecto
+      </button>
     </div>
     
   );

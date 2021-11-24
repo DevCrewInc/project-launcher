@@ -15,4 +15,17 @@ query Usuarios {
   }
 `
 
-export {getUsuarios};
+const getSolicitudesUsuarios =gql`
+query solicitudesUsuarios {
+  SolicitudesNuevosUsuarios {
+      _id
+      nombre
+      apellido
+      identificacion
+      rol
+      estado
+    }
+  }
+`
+
+export {getUsuarios, getSolicitudesUsuarios};

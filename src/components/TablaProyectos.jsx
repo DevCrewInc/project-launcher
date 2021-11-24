@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
-import ModalDetalleProyecto from 'components/ModalDetalleProyecto';
 import React from 'react';
 import { useEffect } from 'react';
+import Tabs from 'components/Tabs';
 
 
 const TablaProyectos = ({propsTablas, nombreQuery,title}) => {
@@ -18,13 +18,9 @@ const TablaProyectos = ({propsTablas, nombreQuery,title}) => {
     return (
 
         <div >
-           
-            <div className="my-4 space-x-2 mt-8 cursor-pointer">
-                <a className="tabs">Todos</a>
-                <a className="tabs">Mis proyectos</a>
-            </div>
+            
             <div>
-            <table className = "w-full table-auto mt-4">
+            <table className = "w-full table-auto mt-2">
                 <thead className = "thead-color leading-10 text-sm text-gray-700 border-1 text-center">
                     <tr>
                         <th>Id</th>
@@ -81,7 +77,7 @@ const FilasTablaProyectos = ({proyecto}) =>{
             </td>
 
             <td className = "flex justify-center items-center space-x-2">
-                <ModalDetalleProyecto/>
+                <i className = "fas fa-eye m-1 p-1 text-gray-400 hover:text-blue-600 cursor-pointer"/>
                 <i className = "fas fa-pen my-1 p-1 text-gray-400 hover:text-yellow-400 cursor-pointer"/>
                 <i className = "fas fa-trash my-1 p-1 text-gray-400 hover:text-red-400 cursor-pointer"/>
             </td>
