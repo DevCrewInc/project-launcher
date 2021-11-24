@@ -5,10 +5,11 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import { Box} from '@mui/system';
 import fotoman from 'fotoman.jpeg';
+import { useState, useEffect, useRef } from 'react';
 
-export default function ScrollDialog() {
-  const [open, setOpen] = React.useState(false);
-  const [scroll, setScroll] = React.useState('paper');
+const ModalDetalleProyecto = ({icon}) => {
+  const [open, setOpen] = useState(false);
+  const [scroll, setScroll] = useState('paper');
 
 
   const handleClickOpen = (scrollType) => () => {
@@ -20,8 +21,8 @@ export default function ScrollDialog() {
     setOpen(false);
   };
 
-  const descriptionElementRef = React.useRef(null);
-  React.useEffect(() => {
+  const descriptionElementRef = useRef(null);
+  useEffect(() => {
     if (open) {
       const { current: descriptionElement } = descriptionElementRef;
       if (descriptionElement !== null) {
@@ -35,7 +36,7 @@ export default function ScrollDialog() {
   return (
     <>
       <div>
-        <Button onClick={handleClickOpen('paper')}>Diálogo detalle proyecto</Button>
+        <i onClick={handleClickOpen('paper')} className = "fas fa-eye m-1 p-1 text-gray-400 hover:text-blue-600 cursor-pointer"/>
         
         <Dialog
           className= "bg-black bg-opacity-50"
@@ -111,3 +112,5 @@ export default function ScrollDialog() {
   );
   
 }
+
+export default ModalDetalleProyecto;

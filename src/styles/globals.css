@@ -16,7 +16,7 @@
 }
 
 .sidebar-route {
-  @apply rounded-3xl flex w-full justify-between cursor-pointer items-center px-4 py-1;
+  @apply rounded-3xl flex w-full cursor-pointer items-center px-4 py-1;
   
 }
 
@@ -72,9 +72,9 @@
   border-radius: 8rem;
 }
 
-.status-button {
-  color: #28B446;
-  background-color: #C0EA7D;
+.inactivo-button {
+  color: #A5143A;
+  background-color: #EA7D7D;
   border-radius: 8rem;
 }
 

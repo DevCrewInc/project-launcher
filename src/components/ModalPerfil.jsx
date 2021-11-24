@@ -2,14 +2,14 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
-import { Box} from '@mui/system';
+import { Box } from '@mui/system';
 import fotoman from 'fotoman.jpeg';
+import { useState, useEffect, useRef } from 'react';
 
 
-export default function ScrollDialog() {
-  const [open, setOpen] = React.useState(false);
-  const [scroll, setScroll] = React.useState('paper');
-
+const ModalPerfil = ({icon}) => {
+  const [open, setOpen] = useState(false);
+  const [scroll, setScroll] = useState('paper');
 
   const handleClickOpen = (scrollType) => () => {
     setOpen(true);
@@ -20,8 +20,8 @@ export default function ScrollDialog() {
     setOpen(false);
   };
 
-  const descriptionElementRef = React.useRef(null);
-  React.useEffect(() => {
+  const descriptionElementRef = useRef(null);
+  useEffect(() => {
     if (open) {
       const { current: descriptionElement } = descriptionElementRef;
       if (descriptionElement !== null) {
@@ -30,13 +30,19 @@ export default function ScrollDialog() {
     }
   }, [open]);
 
-  
 
   return (
     
     <div>
-
-      <Button onClick={handleClickOpen('paper')}>Dialogo perfil</Button>
+      <div onClick={handleClickOpen('paper')} className="align-center mx-4 mb-3 text-sm sidebar-route sidebar-route-disable">
+          <svg width="17" height="20" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+            d={icon}
+            fill="white" stroke="white" stroke-width="0.1"/>
+          </svg>
+          <span className="pl-2 text-white">Mi perfil</span>
+      </div>
+      
 
       <form>
         <Dialog
@@ -117,3 +123,5 @@ export default function ScrollDialog() {
     </div>
   );
 }
+
+export default ModalPerfil ;

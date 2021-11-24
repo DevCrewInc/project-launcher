@@ -8,17 +8,16 @@ import Usuarios from 'pages/Usuarios';
 import 'styles/globals.css';
 import Dialogos from 'pages/Dialogos'
 import Proyectos1 from 'pages/Proyectos1';
-import Proyectos from 'pages/Proyectos'
-import ScrollDialog from 'pages/Perfil';
 import Solicitudes from 'pages/Solicitudes';
+import ListaProyectos from 'pages/ListaProyectos';
 
 // import PrivateRoute from 'components/PrivateRoute';
-const httpLink = createHttpLink({
-  uri: 'https://devcrewserver.herokuapp.com/graphql',
-});
+// const httpLink = createHttpLink({
+//   uri: 'https://devcrewserver.herokuapp.com/graphql',
+// });
 
 const client = new ApolloClient({
-  uri: httpLink,
+  uri: 'https://devcrewserver.herokuapp.com/graphql',
   cache: new InMemoryCache()
 })
 
@@ -31,8 +30,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<PrivateLayout/>}>
-              <Route path='perfil' element={<ScrollDialog/>}/>
-              <Route path='proyectos' element={<Proyectos/>}/>
+              <Route path='dialogos' element={<Dialogos/>}/>
+              <Route path='proyectos' element={<ListaProyectos/>}/>
               <Route path='usuarios' element={<Usuarios />} />
               <Route path='solicitudes' element={<Solicitudes />} />
               <Route path='dialogos' element={<Dialogos/>}/>
