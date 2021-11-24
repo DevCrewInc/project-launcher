@@ -4,8 +4,8 @@ const UpperBar = ({icon , title}) => {
     return (
         <>
             <div className="space-x-3 flex w-full self-center">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d={icon} fill="#343434"/>
+                <svg width="40" height="40" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d={icon} fill="#252323"/>
                 </svg>
 
                 <span className = "font-bold text-2xl">{title}</span>
@@ -20,5 +20,8 @@ const UpperBar = ({icon , title}) => {
         </>
     )
 }
+
+
+
 
 export default UpperBar
