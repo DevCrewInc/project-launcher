@@ -36,7 +36,7 @@ const ModalDetalleProyecto = ({icon}) => {
   return (
     <>
       <div>
-        <i onClick={handleClickOpen('paper')} className = "fas fa-eye m-1 p-1 text-gray-400 hover:text-blue-600 cursor-pointer"/>
+        <i onClick={handleClickOpen('paper')} className = "fas fa-eye p-1 text-gray-400 hover:text-blue-600 cursor-pointer"/>
         
         <Dialog
           className= "bg-black bg-opacity-50"

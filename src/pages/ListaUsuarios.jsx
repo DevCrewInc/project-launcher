@@ -66,13 +66,13 @@ const FilasTablas = ({usuario})=>{
                             <input type="text" placeholder = {usuario._id} className =" overflow-hidden whitespace-nowrap overflow-ellipsis w-14 px-2"/>
                         </td>
                         <td className="text-center w-18">
-                            <input type="text" placeholder = {usuario.nombre} className ="input-tablas "/>
+                            <input type="text" placeholder = {usuario.nombre} className ="input-tablas text-center"/>
                         </td>
                         <td className="text-center p-2 w-14">
                         <img className="rounded-full w-9" src={fotoman}/>
                         </td>
                         <td className="text-center">
-                            <input className="text-gray-600 cursor-pointer bg-white" type="text" value={usuario.identificacion}/>
+                            <input className="text-gray-600 cursor-pointer bg-white text-center" type="text" value={usuario.identificacion}/>
                         </td>
                         <td className="text-center">
                             <input className="text-gray-600 cursor-pointer bg-white" type="button" value={usuario.rol}/>
@@ -86,7 +86,7 @@ const FilasTablas = ({usuario})=>{
                             <i className = "fas fa-trash my-1 p-1 text-gray-400 hover:text-red-400 cursor-pointer"/>
                         </td>
                     </tr>
-                </tbody>         
+                </tbody>
         )
 }
 
