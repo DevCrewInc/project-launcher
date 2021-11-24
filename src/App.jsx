@@ -4,7 +4,7 @@ import PrivateLayout from 'layouts/PrivateLayout';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { UserContext } from 'context/userContext';
 import {ApolloProvider, ApolloClient, createHttpLink, InMemoryCache} from '@apollo/client';
-import Usuarios from 'pages/Usuarios';
+import ListaUsuarios from 'pages/ListaUsuarios';
 import 'styles/globals.css';
 import Dialogos from 'pages/Dialogos'
 import Proyectos1 from 'pages/Proyectos1';
@@ -32,7 +32,7 @@ function App() {
             <Route path='/' element={<PrivateLayout/>}>
               <Route path='dialogos' element={<Dialogos/>}/>
               <Route path='proyectos' element={<ListaProyectos/>}/>
-              <Route path='usuarios' element={<Usuarios />} />
+              <Route path='usuarios' element={<ListaUsuarios />} />
               <Route path='solicitudes' element={<Solicitudes />} />
               <Route path='dialogos' element={<Dialogos/>}/>
               <Route path='proyectos1' element={<Proyectos1/>} />

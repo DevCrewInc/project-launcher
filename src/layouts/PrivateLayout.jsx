@@ -1,6 +1,9 @@
 import Sidebar from 'components/Sidebar';
 import { Outlet } from 'react-router';
 import React,{ useEffect} from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const PrivateLayout = () => {
@@ -16,7 +19,8 @@ const PrivateLayout = () => {
             <Outlet />
           </div> 
         </div>
-      </div>  
+      </div> 
+      <ToastContainer />
     </div>
   
   );
