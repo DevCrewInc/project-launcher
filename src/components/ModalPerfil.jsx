@@ -33,14 +33,14 @@ const ModalPerfil = ({icon}) => {
 
   return (
     
-    <div>
-      <div onClick={handleClickOpen('paper')} className="align-center mx-4 mb-3 text-sm sidebar-route sidebar-route-disable">
+    <div >
+      <div onClick={handleClickOpen('paper')} className="text-white mr-4 flex items-center pl-4 py-1 ml-4 mb-3 text-sm rounded-3xl sidebar-route-disable">
           <svg width="17" height="20" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
             d={icon}
             fill="white" stroke="white" stroke-width="0.1"/>
           </svg>
-          <span className="pl-2 text-white">Mi perfil</span>
+          <span className="pl-2 w-1/4text-white">Mi perfil</span>
       </div>
       
 

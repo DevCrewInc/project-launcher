@@ -30,6 +30,34 @@ const SidebarLinks = () => {
   );
 };
 
+const ButtonNewProject = () =>{
+  return(
+    <div className="button-new-project">
+      <button>
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d_184_2239)">
+          <rect x="3" width="44" height="44" rx="22" fill="#A5143A"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1034 13C25.4052 13 25.6947 13.1199 25.9081 13.3333C26.1215 13.5467 26.2414 13.8362 26.2414 14.138V20.9659H33.069C33.3708 20.9659 33.6602 21.0858 33.8736 21.2992C34.087 21.5126 34.2069 21.8021 34.2069 22.1039C34.2069 22.4057 34.087 22.6952 33.8736 22.9086C33.6602 23.122 33.3708 23.2419 33.069 23.2419H26.2414V30.0698C26.2414 30.3716 26.1215 30.6611 25.9081 30.8745C25.6947 31.0879 25.4052 31.2078 25.1034 31.2078C24.8016 31.2078 24.5122 31.0879 24.2988 30.8745C24.0854 30.6611 23.9655 30.3716 23.9655 30.0698V23.2419H17.1379C16.8361 23.2419 16.5467 23.122 16.3333 22.9086C16.1199 22.6952 16 22.4057 16 22.1039C16 21.8021 16.1199 21.5126 16.3333 21.2992C16.5467 21.0858 16.8361 20.9659 17.1379 20.9659H23.9655V14.138C23.9655 13.8362 24.0854 13.5467 24.2988 13.3333C24.5122 13.1199 24.8016 13 25.1034 13V13Z" fill="white"/>
+          </g>
+          <defs>
+          <filter id="filter0_d_184_2239" x="0" y="0" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dy="3"/>
+          <feGaussianBlur stdDeviation="1.5"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_184_2239"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_184_2239" result="shape"/>
+          </filter>
+          </defs>
+          </svg>
+      </button>
+    </div>
+    
+  );
+}
+
 const Logo = () => {
   return (
     <div className='w-full flex flex-col items-center justify-center mt-10 mb-16 ml-3'>
@@ -58,12 +86,14 @@ const Sidebar = () => {
       {/* Sidebar starts */}
 
       <div className='sidebar hidden md:flex w-56 ml-6 my-3 '>
+      
         <div className='w-full h-full flex flex-col'>
           <Logo />
+          <ButtonNewProject/>
           <SidebarLinks />
         </div>
       </div>
-      <div className='flex md:hidden w-full justify-between bg-gray-800 p-2 text-white'>
+      <div className='flex md:hidden w-2 justify-between bg-gray-800 p-2 text-white'>
         <i className={`fas fa-${open ? 'times' : 'bars'}`} onClick={() => setOpen(!open)} />
         <i className='fas fa-home' />
       </div>
