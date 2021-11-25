@@ -10,6 +10,7 @@ import Dialogos from 'pages/Dialogos'
 import Proyectos1 from 'pages/Proyectos1';
 import Solicitudes from 'pages/Solicitudes';
 import ListaProyectos from 'pages/ListaProyectos';
+import Login from 'pages/Login';
 
 // import PrivateRoute from 'components/PrivateRoute';
 // const httpLink = createHttpLink({
@@ -29,6 +30,7 @@ function App() {
       <UserContext.Provider value={{ userData, setUserData }}>
         <BrowserRouter>
           <Routes>
+            <Route path='login' element={<Login/>} />
             <Route path='/' element={<PrivateLayout/>}>
               <Route path='dialogos' element={<Dialogos/>}/>
               <Route path='proyectos' element={<ListaProyectos/>}/>
@@ -36,6 +38,7 @@ function App() {
               <Route path='solicitudes' element={<Solicitudes />} />
               <Route path='dialogos' element={<Dialogos/>}/>
               <Route path='proyectos1' element={<Proyectos1/>} />
+              <Route path='login' element={<Login/>} />
             </Route>
           </Routes>
         </BrowserRouter>

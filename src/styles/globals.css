@@ -30,18 +30,30 @@
 
 .button-new-project{
   margin-top:100px;
+  color: white;
+  background-color: #A5143A;
+  padding: 13px;
   margin-left: 198px;
   position: absolute;
   display: flex;
   justify-content: end;
 }
 
-.button-new-project-extended{
+.button-new-project:hover{
+  visibility: visible;
   position: absolute;
   background-color: #A5143A;
+  padding: 13px;
+  width: 120px;
   justify-content: end;
+  border-radius: 20px;
+  content: "Completed!" important!;
+  transition: width 2s;
 }
 
+.background-image{
+  background-image: url()
+}
 
 /*MODAL AVANCE*/
 .avance_Date{
